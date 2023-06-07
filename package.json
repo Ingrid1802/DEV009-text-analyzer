@@ -26,7 +26,7 @@
     "acorn": "^8.8.2",
     "babel-jest": "^27.0.1",
     "css": "^3.0.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.42.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
     "jest": "^27.0.1",
@@ -41,5 +41,8 @@
     "createdAt": "2023-05-31T15:13:31.683Z",
     "version": "6.3.0",
     "commit": "a942adeb868f1fe54b86e34cc4fc4ddb0601700d"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
