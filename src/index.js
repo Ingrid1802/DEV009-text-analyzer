@@ -5,16 +5,9 @@ import analyzer from "./analyzer.js";
 document.querySelector("textarea").addEventListener("keyup", function () {
   let text = this.value;
 
-  console.log("hola");
-
   // Actualizar métricas
-  const wordCount = analyzer.getWordCount(text);
-  if (wordCount === 1) {
-    document.getElementById("wordCount").textContent = wordCount + " palabra";
-  } else {
-    document.getElementById("wordCount").textContent = wordCount + " palabras";
-  }
 
+  //Recuento de caracteres :
   const charCount = analyzer.getCharacterCount(text);
   if (charCount === 1) {
     document.getElementById("charCount").textContent = charCount + " carácter";
@@ -23,6 +16,7 @@ document.querySelector("textarea").addEventListener("keyup", function () {
       charCount + " caracteres";
   }
 
+  //Recuento de caracteres sin espacios
   const charCountNoSpaces = analyzer.getCharacterCountExcludingSpaces(text);
   if (charCountNoSpaces === 1) {
     document.getElementById("charCountNoSpaces").textContent =
@@ -32,6 +26,15 @@ document.querySelector("textarea").addEventListener("keyup", function () {
       charCountNoSpaces + " caracteres";
   }
 
+  //palabras
+  const wordCount = analyzer.getWordCount(text);
+  if (wordCount === 1) {
+    document.getElementById("wordCount").textContent = wordCount + " palabra";
+  } else {
+    document.getElementById("wordCount").textContent = wordCount + " palabras";
+  }
+
+  //numeros
   const numberCount = analyzer.getNumbersCount(text);
   if (numberCount === 1) {
     document.getElementById("numberCount").textContent =
@@ -41,9 +44,11 @@ document.querySelector("textarea").addEventListener("keyup", function () {
       numberCount + " números";
   }
 
+  //suma total de numeros
   const numberSum = analyzer.getNumbersSum(text);
   document.getElementById("numberSum").textContent = numberSum;
 
+  //longitud de palabras
   const averageWordLength = analyzer.getAverageWordLength(text);
   document.getElementById("averageWordLength").textContent =
     averageWordLength.toFixed(2);
