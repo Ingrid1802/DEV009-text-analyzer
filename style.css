@@ -1,0 +1,86 @@
+body {
+    background: url(contador.jpg);
+    background-size: cover;
+    /*esto sirve para poner un nuevo valor de ancho y alto para nuestras
+    mágenes de acuerdo al tamaño de la pantalla*/
+}
+
+header{
+    width: fit-content;
+    /*ajuste de contenido*/
+    background-color: #f2f2f2;
+    margin: 30px auto;
+    /*el auto lo ponemos para que se centre*/
+    border-radius: 20px;
+    /*para poder poner mas obalado el borde*/
+    padding: 5px 30px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+.metric-list {
+    padding:0px;
+    width:auto;
+    height:auto;
+    /*list-style-typ sirve para establecer el tipo de viñetas para la lista y en este caso ponemos none para
+    que no tenga nada */
+    list-style-type: none;
+}
+
+
+.li {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    width:385px;
+    height:30px;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales según criterios mínimos y requisitos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+textarea[name="user-input"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none; 
+    background-color: #fffcfc;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
