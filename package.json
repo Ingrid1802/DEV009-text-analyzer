@@ -22,7 +22,6 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "@playwright/test": "^1.33.0",
     "acorn": "^8.8.2",
     "babel-jest": "^27.0.1",
     "css": "^3.0.0",
@@ -43,6 +42,7 @@
     "commit": "a942adeb868f1fe54b86e34cc4fc4ddb0601700d"
   },
   "dependencies": {
+    "@playwright/test": "^1.35.0",
     "save-dev": "^0.0.1-security"
   }
 }

@@ -3,7 +3,7 @@ import analyzer from "./analyzer.js";
 // Event listener para el evento keyup del textarea
 //captura del valor del textarea al darle
 document.querySelector("textarea").addEventListener("keyup", function () {
-  let text = this.value;
+  const text = this.value;
 
   // Actualizar métricas
 
@@ -35,7 +35,7 @@ document.querySelector("textarea").addEventListener("keyup", function () {
   }
 
   //numeros
-  const numberCount = analyzer.getNumbersCount(text);
+  const numberCount = analyzer.getNumberCount(text);
   if (numberCount === 1) {
     document.getElementById("numberCount").textContent =
       numberCount + " número";
@@ -45,7 +45,7 @@ document.querySelector("textarea").addEventListener("keyup", function () {
   }
 
   //suma total de numeros
-  const numberSum = analyzer.getNumbersSum(text);
+  const numberSum = analyzer.getNumberSum(text);
   document.getElementById("numberSum").textContent = numberSum;
 
   //longitud de palabras
